@@ -1,0 +1,528 @@
+1. Animal Handler
+2. Arborist
+3. Baler
+4. Beekeeper
+5. Birdcatcher
+6. Cowherd
+7. Dairyboy/Dairymaid
+8. Falconer
+9. Farmer
+10. Fisher
+11. Forager
+
+12. Gamekeeper
+13. Groom
+14. Herder
+15. Horse Trainer
+16. Hunter
+17. Master-of-Horses
+18. Master-of-Hounds
+19. Miller
+20. Miner
+21. Pathfinder
+22. Prospector
+
+23. Ranger
+24. Renderer
+25. Shepherd
+26. Stablehand
+27. Thresher
+28. Trapper
+29. Vintner
+30. Woodcutter
+31. Zookeeper
+
+ARCHITECTURE & CONSTRUCTION
+
+32. Architect
+33. Brickmaker
+34. Brickmason
+35. Carpenter
+
+36. Claymason
+37. Construction Worker
+38. Plasterer
+39. Roadlayer
+
+40. Roofer
+41. Stonemason
+42. Streetlayer
+43. Thatcher
+
+2
+
+ARTS, The
+
+44. Acrobat
+45. Actor
+46. Athlete
+47. Busker/Street
+Musician
+48. Celebrity
+49. Chef
+50. Circus Performer
+51. Dancer
+
+52. Fashion Designer
+53. Gladiator
+54. Glasspainter
+55. Jester
+56. Illuminator
+57. Minstrel
+58. Musician
+59. Painter
+60. Piper
+
+61. Playwright
+62. Poet
+63. Sculptor
+64. Singer/Soprano
+65. Skald
+66. Tattooist
+67. Wrestler/Brawler
+68. Writer
+
+BUSINESS & TRADE
+
+69. Accountant
+70. Actuary
+71. Ale/Wine Draper
+72. Appraiser
+73. Auctioneer
+74. Banker
+75. Bathhouse Owner/
+Bagniokeeper
+76. Bookkeeper
+
+77. Brothel Owner/Pimp
+78. Chandler
+79. Collector
+80. Entrepreneur
+81. Fishmonger
+82. General Contractor
+83. Grocer
+84. Guild Master
+85. Innkeeper
+
+86. Ironmonger
+87. Land Surveyor
+88. Merchant
+89. Peddler
+90. Plantation Owner
+91. Speculator
+92. Street Vendor
+93. Thriftdealer
+94. Tradesman
+
+COMMUNICATIONS
+
+95. Billboardposter
+96. Courier
+97. Herald
+
+98. Interpreter
+99. Linguist
+100. Messenger
+
+101. Town Crier
+102. Translator
+
+3
+
+CRAFTSMAN
+
+103. Accoutrement
+Maker
+104. Alabasterer
+105. Armorer
+106. Blacksmith
+107. Bladesmith
+108. Bookbinder
+109. Bottler
+110. Bowyer
+111. Brewer
+112. Broom Maker
+113. Candlemaker
+114. Cardmaker
+115. Cartwright
+116. Cobbler
+117. Cooper/Hooper
+118. Cutler
+119. Dyer
+
+120. Embroiderer
+121. Engraver
+122. Fletcher
+123. Furniture Artisan
+124. Furrier
+125. Glazier/Glassmaker
+126. Glovemaker
+127. Goldsmith/
+Silversmith
+128. Guilder
+129. Hatter/Milliner
+130. Jem Cutter
+131. Jeweler
+132. Leatherworker
+133. Locksmith
+134. Luthier
+135. Mercer
+136. Potter
+
+137. Printer
+138. Rope-maker
+139. Saddler
+140. Seamstress/Tailor
+141. Soaper
+142. Tanner
+143. Taxidermist
+144. Thatcher
+145. Tinker
+146. Toymaker
+147. Watchmaker
+148. Weaponsmith
+149. Weaver
+150. Wheelwright
+151. Whittler
+152. Woodcarver
+
+CRIME
+
+153. Assassin
+154. Bandit
+155. Burglar
+156. Charlatan/Conman
+157. Cockfighter/
+Gamefighter
+158. Crime Boss
+
+159. Cutpurse
+160. Drug Dealer
+161. Drug Lord
+162. Fence
+163. Highwayman
+164. Kidnapper
+165. Loan Shark
+
+166. Outlaw
+167. Pirate
+168. Poacher
+169. Raider
+170. Smuggler
+171. Thief/Rogue
+
+4
+
+EDUCATION, SCIENCE, & MATH
+
+172. Abecedarian
+173. Anthropologist
+174. Apprentice
+175. Archaeologist
+176. Archivist
+177. Artificer
+178. Assayer
+179. Astrologer
+180. Botanist
+
+181. Cartographer
+182. Chemist
+183. Dean
+184. Engineer
+185. Historian
+186. Horologist
+187. Librarian
+188. Mathematician
+189. Philosopher
+
+190. Professor
+191. Scholar/Researcher
+192. Scribe
+193. Student
+194. Teacher
+195. Theologian
+196. Tutor
+
+GOVERNMENT & LAW
+
+197. Affeeror
+198. Agister
+199. Alderman
+200. Alienist
+201. Archduke/
+Archduchess
+202. Aristocrat
+203. Assay Master
+204. Baron/Baroness
+205. Chancellor
+206. Chief
+207. Constable
+208. Count/Countess
+
+209. Courtier
+210. Diplomat
+211. Duke/Duchess
+212. Emperor/Empress
+213. Judge
+214. King/Queen
+215. Knight
+216. Lady-in-Waiting
+217. Lawyer/Advocate
+218. Marquess
+219. Master-of-Coin
+
+220. Master-of-the-
+Revels
+
+221. Minister
+222. Noble
+223. Orator/Spokesman
+224. Prince/Princess
+225. Senator
+226. Spymaster
+227. Steward
+228. Squire
+229. Tax Collector
+230. Viscount/
+Viscountess
+231. Ward
+
+HEALTH
+
+232. Accoucheur/
+Obstetrician
+233. Alchemist
+234. Apothecary
+235. Bloodletter
+
+236. Doctor
+237. Healer
+238. Herbalist
+239. Midwife
+240. Mortician
+
+241. Nurse
+242. Physician
+243. Surgeon/
+Chirurgeon
+244. Veterinarian
+
+5
+
+HOSPITALITY & COMMON LABOR
+
+245. Acater
+246. Ale/Wine Tunner
+247. Baker
+248. Barber
+249. Barkeep
+250. Barmaid
+251. Butcher
+252. Caregiver
+253. Charcoal Maker
+254. Chatelaine/
+Majordomo
+255. Chimney Sweeper
+256. Clerk
+257. Cook
+258. Copyist
+259. Croupier
+
+260. Distiller
+261. Florist
+262. Food & Drink
+Taster
+263. Gardener
+264. Gongfarmer
+265. Gravedigger
+266. Housemaid
+267. Kitchen Drudge
+268. Laborer
+269. Lamplighter
+270. Landscaper
+271. Laundry Worker
+272. Longshoreman
+273. Maid/Butler
+
+274. Orphanage
+Caretaker
+275. Page
+276. Pastry Chef
+277. Plumer
+278. Porter
+279. Prostitute
+280. Quarryman
+281. Rag-and-Bone Man
+282. Slave
+283. Street Sweeper
+284. Tavern Worker
+285. Trainer
+286. Vermin Catcher
+287. Water Bearer
+
+MAGICAL ARTS, The
+
+288. Abjurer
+289. Archmage
+290. Augurer
+291. Conjuror
+292. Druid
+293. Elementalist
+294. Enchanter/
+Enchantress
+295. Evoker
+296. Hearth-witch
+
+297. Illusionist
+298. Mage
+299. Medium
+300. Necromancer
+301. Ritualist
+302. Runecaster
+303. Sage
+304. Seer/Oracle
+305. Shaman
+306. Shapeshifter
+
+307. Sorcerer/Sorceress
+308. Summoner
+309. Transmuter
+310. Warlock
+311. Witchdoctor
+312. Witch
+313. Wizard
+314. Wordsmith
+
+6
+
+MILITARY & SECURITY
+
+315. Admiral
+316. Archer
+317. Bailiff
+318. Bodyguard
+319. Bouncer
+320. Captain
+321. Castellan
+322. Cavalier
+323. City Watch
+324. Commissar
+325. Crossbowman
+326. Detective/
+Investigator
+327. Drummer/Fifer
+328. Duelist
+329. Executioner
+
+330. Field Medic/
+Combat Medic
+331. Fireman
+332. Friar
+333. Guard
+334. General
+335. Inspection Officer
+336. Intelligence Officer
+337. Jailer
+338. Man-at-Arms
+339. Marshall
+340. Mercenary
+341. Privateer
+342. Quartermaster
+343. Royal Guard
+344. Runner
+345. Sapper
+
+346. Sentinel
+347. Sergeant
+348. Sergeant-at-Arms
+349. Scout
+350. Siege Artillerist
+351. Slave Driver
+352. Soldier
+353. Spearman
+354. Special/Secret
+Troops
+355. Spy
+356. Tactician
+357. Tollkeeper
+358. Torturer
+359. Warden
+360. Warmage
+
+RELIGION
+
+361. Abbot/Abbess
+362. Acolyte
+363. Almoner
+364. Archbishop
+365. Bishop
+366. Cardinal
+367. Chaplain
+368. Clergy
+369. Cleric
+
+370. Cultist
+371. Cult Leader
+372. Diviner
+373. Exorcist
+374. Friar
+375. High Priest/Pope
+376. Inquisitor
+377. Missionary
+378. Monk
+
+379. Nun
+380. Paladin
+381. Pardoner
+382. Priest
+383. Prophet
+384. Sexton
+385. Templar
+
+7
+
+TRANSPORTATION
+
+386. Boatman
+387. Bosun
+388. Cabbie/Wagoner
+389. Caravaneer
+390. Caravan Guard
+391. Charioteer
+
+392. Carter
+393. Ferryman
+394. First Mate
+395. Helmsman
+396. Navigator
+397. Purser
+
+398. Sailor
+399. Sea Captain
+400. Shipwright
+401. Swab
+402. Adventurer
+403. Beggar/Pauper
+404. Blood Hunter/
+Monster Hunter
+405. Bounty Hunter
+406. Deserter
+407. Disgraced Noble
+408. Dungeon Delver
+409. Elder/Retiree
+410. Exile
+411. Explorer
+412. Ex-Criminal
+
+413. Far Traveler
+414. Folk Hero
+415. Fool
+416. Gambler
+417. Grave Robber/
+Tomb Raider
+418. Heckler
+419. Heretic
+420. Hermit
+421. Housewife/
+Househusband
+422. Pilgrim

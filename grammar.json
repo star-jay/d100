@@ -1,0 +1,5 @@
+{
+    "origin": "#interjection.capitalize#, #name#! I'm #profession.a#, not #profession.a#!",
+    "interjection": ["alas", "congratulations", "eureka", "fiddlesticks",
+        "good grief", "hallelujah", "oops", "rats", "thanks", "whoa", "yes"]
+}
