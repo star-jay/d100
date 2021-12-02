@@ -1,0 +1,10 @@
+Entrance
+illusion room
+
+Soulmirror
+Shows a linked soul, upon touching you switch place with
+
+Shopping
+ticket to higher floor
+
+minotaur maze

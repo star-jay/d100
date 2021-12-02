@@ -1,0 +1,10 @@
+{
+    "name":"taven",
+    "type": "location",
+    "activities": [
+        "sleep",
+        "drink",
+        "eat"
+    ],
+    "start_location": true
+}

@@ -1,0 +1,16 @@
+{
+    "description": "A list of noble possisions in dnd",
+    "professions": [
+        "",
+        "Emperor/Empress",
+        "King/Queen",
+        "Duke/Duchess",
+        "Prince/Princess",
+        "Marquess/Marquise",
+        "Earl or Count/Countess",
+        "Viscount/Viscountess",
+        "Baron/Baroness",
+        "Baronet",
+        "Knight"
+    ]
+}
