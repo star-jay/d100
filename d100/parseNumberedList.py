@@ -14,7 +14,7 @@ def dnd_prof():
         "professions": content
     }
 
-    writing_file = open("dndProffessions2.json", "+w")
+    writing_file = open("dndProffessions2.json", "w")
     json.dump(content, fp=writing_file)
 
 
@@ -35,7 +35,7 @@ def royalties():
         "positions": content
     }
 
-    writing_file = open("nobles.json", "+w")
+    writing_file = open("nobles.json", "w")
     json.dump(content, fp=writing_file)
 
 
