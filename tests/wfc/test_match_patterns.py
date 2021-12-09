@@ -1,5 +1,5 @@
-from d100.wcf.wcf import match_patterns
-from d100.wcf.constants import UP, DOWN, RIGHT, LEFT
+from d100.wfc.wfc import match_patterns
+from d100.wfc.constants import UP, DOWN, RIGHT, LEFT
 
 
 def test_simple_pattern():

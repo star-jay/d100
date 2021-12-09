@@ -96,7 +96,7 @@ def find_node(nodes):
     return min(pick_from, key=lambda x: len(x.options))
 
 
-def wcf(patterns, bounds):
+def wfc(patterns, bounds):
     wave = [
         [
             Node(x, y, patterns)

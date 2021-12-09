@@ -1,5 +1,5 @@
-from d100.wcf.constants import (UP, DOWN, RIGHT, LEFT)
-from d100.wcf.wcf import Node
+from d100.wfc.constants import (UP, DOWN, RIGHT, LEFT)
+from d100.wfc.wfc import Node
 import pytest
 
 

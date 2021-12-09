@@ -1,5 +1,5 @@
-from d100.wcf.constants import (UP, DOWN, RIGHT, LEFT)
-from d100.wcf.wcf import get_neighbours
+from d100.wfc.constants import (UP, DOWN, RIGHT, LEFT)
+from d100.wfc.wfc import get_neighbours
 
 
 def test_remove_invalid_options():

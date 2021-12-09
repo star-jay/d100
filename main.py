@@ -1,12 +1,17 @@
-from d100.wcf.wcf import wcf
-from d100.wcf.utils import eight_versions
+from d100.wfc.wfc import wfc
+from d100.wfc.utils import eight_versions
+from d100.wfc.patterns import generate_tileset
 
 
 if __name__ == "__main__":
     W, L, R = range(3)
-    W, L, R = ['≈', '.', '█']
+    W, L, R = ['≈', ' ', '█']
 
-    tiles = [
+    tileset_1 = [
+        [
+            [W, W],
+            [W, R],
+        ],
         [
             [W, W],
             [W, W],
@@ -28,6 +33,10 @@ if __name__ == "__main__":
             [L, L],
         ],
         [
+            [W, L],
+            [L, L],
+        ],
+        [
             [R, R],
             [L, L],
         ],
@@ -37,14 +46,61 @@ if __name__ == "__main__":
         ],
     ]
 
+    tileset_2 = [
+        [
+            [L, R, L],
+            [R, R, L],
+            [L, L, L],
+        ],
+        [
+            [L, R, L],
+            [R, R, R],
+            [L, R, L],
+        ],
+        [
+            [R, R, L],
+            [R, R, R],
+            [L, R, L],
+        ],
+    ]
+
+    example = """
+    ≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈
+    ≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈
+    ≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈
+    ≈≈≈≈≈≈≈≈≈   ≈≈≈≈≈≈
+    ≈≈≈  ≈≈≈     ≈≈≈≈≈
+    ≈≈≈          ≈≈≈≈≈
+    ≈≈≈     ██  ≈≈≈≈≈≈
+    ≈≈≈≈≈   ███    ≈≈≈
+    ≈≈≈≈≈≈  █     ≈≈≈≈
+    ≈≈≈≈≈≈        ≈≈≈≈
+    ≈≈≈≈≈≈≈≈    ≈   ≈≈
+    ≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈
+    ≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈
+    """
+    example = example.lstrip().rstrip()
+    example = example.splitlines()
+    example = [
+        line.lstrip().rstrip()
+        for line in example
+    ]
+
+    N = 3
+    tileset_3 = generate_tileset(example, N)
+
+    for tile in tileset_3:
+        for line in tile:
+            print(line)
+
     patterns = []
-    for tile in tiles:
+    for tile in tileset_3:
         patterns += eight_versions(tile)
 
     # N = 2
-    bounds = 52
+    bounds = 3
 
-    wave = wcf(patterns, bounds)
+    wave = wfc(patterns, bounds)
 
     for y in range(bounds):
         print(''.join([
