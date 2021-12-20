@@ -1,113 +1,25 @@
-from d100.wfc.wfc import wfc
-from d100.wfc.utils import eight_versions
-from d100.wfc.patterns import generate_tileset
+from d100.voronoi import voronoi, utils, draw
+import random
 
 
-if __name__ == "__main__":
-    W, L, R = range(3)
-    W, L, R = ['≈', ' ', '█']
+if __name__ == '__main__':
+    WIDTH, HEIGHT = 500, 500
+    SCALE = 500
 
-    tileset_1 = [
-        [
-            [W, W],
-            [W, R],
-        ],
-        [
-            [W, W],
-            [W, W],
-        ],
-        [
-            [W, W],
-            [W, L],
-        ],
-        [
-            [W, L],
-            [W, L],
-        ],
-        [
-            [L, L],
-            [L, L],
-        ],
-        [
-            [R, L],
-            [L, L],
-        ],
-        [
-            [W, L],
-            [L, L],
-        ],
-        [
-            [R, R],
-            [L, L],
-        ],
-        [
-            [R, R],
-            [L, R],
-        ],
-    ]
+    random.seed(1)
 
-    tileset_2 = [
-        [
-            [L, R, L],
-            [R, R, L],
-            [L, L, L],
-        ],
-        [
-            [L, R, L],
-            [R, R, R],
-            [L, R, L],
-        ],
-        [
-            [R, R, L],
-            [R, R, R],
-            [L, R, L],
-        ],
-    ]
+    points = utils.random_points(250)
+    vor = voronoi.voronoi_bounded(points, voronoi.bounding_box)
+    points = vor.vertices
 
-    example = """
-    ≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈
-    ≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈
-    ≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈
-    ≈≈≈≈≈≈≈≈≈   ≈≈≈≈≈≈
-    ≈≈≈  ≈≈≈     ≈≈≈≈≈
-    ≈≈≈          ≈≈≈≈≈
-    ≈≈≈     ██  ≈≈≈≈≈≈
-    ≈≈≈≈≈   ███    ≈≈≈
-    ≈≈≈≈≈≈  █     ≈≈≈≈
-    ≈≈≈≈≈≈        ≈≈≈≈
-    ≈≈≈≈≈≈≈≈    ≈   ≈≈
-    ≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈
-    ≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈
-    """
-    example = example.lstrip().rstrip()
-    example = example.splitlines()
-    example = [
-        line.lstrip().rstrip()
-        for line in example
-    ]
+    points = voronoi.relax_points(points)
 
-    N = 3
-    tileset_3 = generate_tileset(example, N)
+    # vor = voronoi(points)
+    # points = vor.vertices
+    vor = voronoi.voronoi_bounded(points, voronoi.bounding_box)
+    # min_max(points)
+    # min_max(vor.vertices)
 
-    for tile in tileset_3:
-        for line in tile:
-            print(line)
-
-    patterns = []
-    for tile in tileset_3:
-        patterns += eight_versions(tile)
-
-    # N = 2
-    bounds = 3
-
-    wave = wfc(patterns, bounds)
-
-    for y in range(bounds):
-        print(''.join([
-            ''.join(wave[y][x].tile[0])
-            for x in range(bounds)
-        ]))
-        print(''.join([
-            ''.join(wave[y][x].tile[1])
-            for x in range(bounds)
-        ]))
+    # DEBUG
+    voronoi.plot_vornoi_diagram(vor, voronoi.bounding_box)
+    draw.draw_map(vor, WIDTH, HEIGHT, SCALE)

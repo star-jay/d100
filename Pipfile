@@ -11,6 +11,10 @@ tracery = "*"
 flake8 = "*"
 setuptools = "*"
 pytest = "*"
+scipy = "*"
+matplotlib = "*"
+tk = "*"
+lloyd = "*"
 
 [requires]
 python_version = "3.8"
