@@ -19,6 +19,15 @@
         - tail
         - limbs
 
+- civs:
+    dwarves:
+        - dont spread out
+    humans:
+        - spread out but focus in city and villages
+    elves:
+        - only leaders make children
+        - immortal
+
 
 ## region
 - world
@@ -57,7 +66,7 @@
 
 
 
-NOMAD
+# NOMAD
 A group of nomads follows a giant creature and lives off its dung
 the giant creature lives on a big plain, it eats grass, when the resources are scarse he moves on
 
@@ -69,3 +78,8 @@ the giant creature lives on a big plain, it eats grass, when the resources are s
 - predators
 - rivaling tribes
 - other tribes follow other animals
+
+# God vs Kingdom
+Try and rule a kingdom while the gods are playing their own little games
+- food vs economy vs peity
+- keep your people happy by supporting the more popular gods
