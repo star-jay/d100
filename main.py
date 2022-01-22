@@ -7,12 +7,13 @@ random.seed(1)
 
 class Region():
     """regions are polys in the world space"""
-    def __init__(self, point, poly, region_index, neighbours):
+    def __init__(self, world, point, poly, region_index, neighbours):
         # self.poly = poly
         self.region_index = region_index
         self.point = point
         self.neighbours = neighbours
         self.poly = poly
+        self.world = world
 
 
 class Kingdom():
@@ -47,18 +48,17 @@ class Kingdom():
 class World():
     """A worls has regions"""
 
-    def generate_worldmap(self):
-        points = utils.random_points(200)
+    def generate_worldmap(self, n=200):
+        points = utils.random_points(n)
         vor = voronoi.voronoi_bounded(points, voronoi.bounding_box)
         points = vor.vertices
 
         points = voronoi.relax_points(points, n=1)
 
-        # vor = voronoi(points)
-        # points = vor.vertices
+        # Create bounded vornoi, all regions are inside the region
         self.vor = voronoi.voronoi_bounded(points, voronoi.bounding_box)
         self.regions = [
-            Region(**region)
+            Region(world=self, **region)
             for index, region
             in voronoi.region_ridge_and_neighbour(vor).items()
         ]
@@ -80,12 +80,12 @@ class World():
         draw.draw_world(self)
 
     def __init__(self):
-        self.generate_worldmap()
-        self.generate_kingdoms()
+        self.generate_worldmap(n=50)
+        self.generate_kingdoms(n=1)
 
-        for x in range(5):
-            for kingdom in self.kingdoms:
-                kingdom.expand()
+        # for x in range(5):
+        #     for kingdom in self.kingdoms:
+        #         kingdom.expand()
 
         self.debug()
 
