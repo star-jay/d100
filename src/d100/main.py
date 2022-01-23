@@ -61,7 +61,7 @@ class World():
         #     for kingdom in self.kingdoms:
         #         kingdom.expand()
 
-        self.debug()
+        # self.debug()
 
     def generate_worldmap(self, n=200):
         points = utils.random_points(n)
@@ -75,7 +75,7 @@ class World():
         vor = voronoi.voronoi_bounded(points, voronoi.bounding_box)
         self.vor = vor
 
-        graph = voronoi.region_graph(vor)
+        graph = voronoi.region_ridge_and_neighbour(vor)
 
         self.regions = {
             index: Region(world=self, **region)
