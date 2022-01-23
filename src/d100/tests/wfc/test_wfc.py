@@ -1,6 +1,6 @@
 # from wfc.constants import (UP, DOWN, RIGHT, LEFT)
-from wfc.wfc import wfc
-from wfc.utils import eight_versions
+from d100.wfc.wfc import wfc
+from d100.wfc.utils import eight_versions
 
 
 # Test entire wfc flow

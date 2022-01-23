@@ -1,4 +1,4 @@
-from voronoi import voronoi, utils
+from d100.voronoi import voronoi, utils
 import numpy as np
 
 

@@ -1,6 +1,7 @@
-from wfc.constants import (UP, DOWN, RIGHT, LEFT)
-from wfc.wfc import Node
 import pytest
+
+from d100.wfc.constants import (UP, DOWN, RIGHT, LEFT)
+from d100.wfc.wfc import Node
 
 
 def test_remove_invalid_options():

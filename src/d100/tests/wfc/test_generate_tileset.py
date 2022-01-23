@@ -1,7 +1,7 @@
 # from wfc.constants import (UP, DOWN, RIGHT, LEFT)
 # from wfc.wfc import wfc
 # from wfc.utils import eight_versions
-from wfc.patterns import generate_tileset
+from d100.wfc.patterns import generate_tileset
 
 
 # Test entire wfc flow
