@@ -6,12 +6,12 @@ name = "pypi"
 [dev-packages]
 "flake8" = "*"
 ipykernel = "*"
+pytest = "*"
+flake8 = "*"
 
 [packages]
 tracery = "*"
-flake8 = "*"
 setuptools = "*"
-pytest = "*"
 scipy = "*"
 matplotlib = "*"
 tk = "*"
