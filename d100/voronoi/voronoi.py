@@ -143,20 +143,19 @@ def region_ridge_and_neighbour(vor):
         region_index = vor.point_region[index]
         region = vor.regions[region_index]
         poly = vor.vertices[region, :]
-        # poly = [vor.vertices[v] for v in vor.regions[region_index]],
 
-        neighbours = {
-            [k for k in key if k != region_index][0]: border
-            for key, border in vor.ridge_dict.items()
-            if region_index in key and -1 not in key
-            if -1 not in border
+        # a border is defined by two points and has two vertices as attributes
+        borders = {
+            points: border_vertices
+            for points, border_vertices in vor.ridge_dict.items()
+            if index in points and -1 not in border_vertices
         }
 
         results[index] = dict(
+            index=index,
             point=point,
             region_index=region_index,
             poly=poly,
-            neighbours=neighbours,
+            borders=borders,
         )
-
     return results

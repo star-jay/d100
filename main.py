@@ -7,13 +7,19 @@ random.seed(1)
 
 class Region():
     """regions are polys in the world space"""
-    def __init__(self, world, point, poly, region_index, neighbours):
-        # self.poly = poly
-        self.region_index = region_index
-        self.point = point
-        self.neighbours = neighbours
-        self.poly = poly
+    def __init__(self, world, index, point, poly, region_index, borders):
+
         self.world = world
+
+        self.index = index
+        self.point = point
+        self.region_index = region_index
+        self.poly = poly
+        self.borders = borders
+
+    def invade(self, kingdom):
+        # if not resisting:
+        self.kingdom = kingdom
 
 
 class Kingdom():
@@ -34,19 +40,28 @@ class Kingdom():
         # else:
         #     # self.rebel()
         #     pass
-        self.regions = [starting_region, ]
 
     def expand(self):
         """
         Pick a random neighbour and expand to it
         """
         for region in self.regions:
-            neighbour = random.choice(region.neighbours)
-            self.regions.append(neighbour)
+            border = random.choice(region.borders)
+            self.world.invade(self, border)
 
 
 class World():
     """A worls has regions"""
+
+    def __init__(self):
+        self.generate_worldmap(n=250)
+        self.generate_kingdoms(n=5)
+
+        # for x in range(5):
+        #     for kingdom in self.kingdoms:
+        #         kingdom.expand()
+
+        self.debug()
 
     def generate_worldmap(self, n=200):
         points = utils.random_points(n)
@@ -55,13 +70,27 @@ class World():
 
         points = voronoi.relax_points(points, n=1)
 
-        # Create bounded vornoi, all regions are inside the region
-        self.vor = voronoi.voronoi_bounded(points, voronoi.bounding_box)
-        self.regions = [
-            Region(world=self, **region)
-            for index, region
-            in voronoi.region_ridge_and_neighbour(vor).items()
-        ]
+        # 1 Ddevide the map in voronoi regions
+        # Create bounded vornoi, all regions are inside the bounding box
+        vor = voronoi.voronoi_bounded(points, voronoi.bounding_box)
+        self.vor = vor
+
+        graph = voronoi.region_graph(vor)
+
+        self.regions = {
+            index: Region(world=self, **region)
+            for index, region in graph.items()
+        }
+
+    def create_biomes(self):
+        # create a noise map
+        # set height of region based on height map
+        pass
+
+    def create_rivers(self):
+        # run river from source to sea
+        # run
+        pass
 
     def generate_kingdoms(self, n=7):
         # number of starting kingdoms:
@@ -73,21 +102,7 @@ class World():
 
     def debug(self):
         """gives some debug information"""
-        # WIDTH, HEIGHT = 1000, 1000
-        # SCALE = 1000
-        # voronoi.plot_vornoi_diagram(self.vor, voronoi.bounding_box)
-        # draw.draw_map(self.vor, WIDTH, HEIGHT, SCALE)
         draw.draw_world(self)
-
-    def __init__(self):
-        self.generate_worldmap(n=50)
-        self.generate_kingdoms(n=1)
-
-        # for x in range(5):
-        #     for kingdom in self.kingdoms:
-        #         kingdom.expand()
-
-        self.debug()
 
 
 if __name__ == '__main__':
