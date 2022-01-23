@@ -7,7 +7,6 @@ name = "pypi"
 "flake8" = "*"
 ipykernel = "*"
 pytest = "*"
-flake8 = "*"
 
 [packages]
 tracery = "*"
@@ -16,6 +15,7 @@ scipy = "*"
 matplotlib = "*"
 tk = "*"
 lloyd = "*"
+d100 = {path = "."}
 
 [requires]
 python_version = "3.8"
