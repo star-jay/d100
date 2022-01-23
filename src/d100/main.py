@@ -1,4 +1,4 @@
-from voronoi import voronoi, utils, draw
+from d100.voronoi import voronoi, utils, draw
 import random
 
 
