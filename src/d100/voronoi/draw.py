@@ -1,6 +1,6 @@
 import tkinter as tk
-from voronoi.utils import random_color
-import numpy as np
+
+from d100.voronoi.utils import random_color
 
 
 WIDTH, HEIGHT = 1000, 1000
@@ -79,9 +79,14 @@ def draw_world(world, width=WIDTH, height=HEIGHT, scale=SCALE):
                 poly = scale_and_flip(poly, scale, height)
                 canvas.create_line(poly, fill='red',)
 
-                neighbour_point = [point for point in points if point != region.index][0]
+                neighbour_point = [
+                    point for point in points if point != region.index
+                ][0]
                 neighbour_region = world.vor.point_region[neighbour_point]
-                poly = [world.vor.vertices[v] for v in world.vor.regions[neighbour_region]]
+                poly = [
+                    world.vor.vertices[v]
+                    for v in world.vor.regions[neighbour_region]
+                ]
                 poly = scale_and_flip(poly, 1000, 1000)
                 canvas.create_polygon(poly, fill='blue', outline='black')
 
