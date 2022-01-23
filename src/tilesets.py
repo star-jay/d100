@@ -1,6 +1,6 @@
-from d100.wfc.wfc import wfc
-from d100.wfc.utils import eight_versions
-from d100.wfc.patterns import generate_tileset
+from wfc.wfc import wfc
+from wfc.utils import eight_versions
+from wfc.patterns import generate_tileset
 
 
 W, L, R = range(3)

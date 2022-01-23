@@ -1,5 +1,5 @@
 import tkinter as tk
-from d100.voronoi.utils import random_color
+from voronoi.utils import random_color
 import numpy as np
 
 
