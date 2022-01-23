@@ -1,6 +1,8 @@
 # GODOT
 
-- Python godot
+## Python godot
+`cd addons/pythonscript/x11-64/bin/ `
+`./python3.8 -m pip install scipy`
 got it to work
 
 - voxel godot
